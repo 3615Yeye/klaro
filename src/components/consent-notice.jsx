@@ -216,6 +216,25 @@ export default class ConsentNotice extends React.Component {
                     <p>
                         <Text
                             config={config}
+                            className='cn-title'
+                            text={t(['consentNotice', 'title'], {
+                                purposes: <strong key="strong">{purposesText}</strong>,
+                                privacyPolicy: ppLink,
+                                learnMoreLink: learnMoreLink(),
+                            })}
+                        />
+                        <Text
+                            config={config}
+                            className='cn-subtitle'
+                            text={t(['consentNotice', 'subtitle'], {
+                                purposes: <strong key="strong">{purposesText}</strong>,
+                                privacyPolicy: ppLink,
+                                learnMoreLink: learnMoreLink(),
+                            })}
+                        />
+                        <Text
+                            config={config}
+                            className='cn-desc'
                             text={t(['consentNotice', 'description'], {
                                 purposes: <strong key="strong">{purposesText}</strong>,
                                 privacyPolicy: ppLink,
