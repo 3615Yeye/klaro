@@ -1,0 +1,22 @@
+name: klaro
+recipe: lamp
+proxy:                
+  theme:              # Optional: add this if you include the Sage specific config down below
+    - klaro.localhost
+config:
+  #php: '7.4'
+  #via: nginx
+  #version: 2.4
+  #webroot: web
+
+# Add the following if you plan to use Sage as a starter theme
+services:
+  theme:
+    type: node:14
+    ports:
+      - 4000:8080
+      - 4001:4001
+
+tooling:
+  npm:
+    service: theme
