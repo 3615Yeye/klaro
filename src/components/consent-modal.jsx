@@ -138,8 +138,8 @@ export default class ConsentModal extends React.Component {
                 <div className="cm-footer">
                     <div className="cm-footer-buttons">
                         {declineButton}
-                        {acceptButton}
                         {acceptAllButton}
+                        {acceptButton}
                     </div>
                     {
                         !config.disablePoweredBy &&
